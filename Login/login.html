@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+
+  <body>
+    <!--------->
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Create Account</h1>
+          <span>Use your email for registration</span>
+          <input type="text" placeholder="Name" id="name" />
+          <input type="email" placeholder="Email" id="sign_email" />
+          <input type="password" placeholder="Password" id="sign_pass" />
+          <button id="signup1">Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign in</h1>
+          <span>Use your account</span>
+          <input type="email" placeholder="Email" id="log_email" />
+          <input type="password" placeholder="Password" id="log_pass" />
+          <a href="#">Forgot your password?</a>
+          <button id="signin1">Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer content-->
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">
+          <span style="color: #ffc922">MOOO Ltd.</span>
+        </h1>
+
+        <h2>Contact</h2>
+
+        <address>
+          Dreamland City, IL 98765<br />
+
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">BOOK and MANAGE</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Search Flights</a>
+            </li>
+
+            <li>
+              <a href="#">Manage Bookings</a>
+            </li>
+
+            <li>
+              <a href="#">Flight Schedules</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title" style="text-align: center">ABOUT US</h2>
+
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="#">Corporate Information</a>
+            </li>
+
+            <li>
+              <a href="#">Press</a>
+            </li>
+
+            <li>
+              <a href="#">Cargo Operations</a>
+            </li>
+
+            <li>
+              <a href="#">About Mooo Airlines</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <h2 class="nav__title">SUPPORT</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Contact</a>
+            </li>
+
+            <li>
+              <a href="#">FAQs</a>
+            </li>
+
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <h>&copy; Copyrights 2023. All rights reserved.</h>
+
+        <div class="legal__links">
+          <span
+            >Be a STAR ALLIANCE MEMBER <span class="heart">♥</span> Use of this
+            website indicates your compliance with our Terms and
+            Conditions.</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./login.js"></script>
+</html>
