@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="profile.css" />
+  </head>
+  <body>
+    <div id = "main">
+      <div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <div
+            class="nav-title"
+            style="font-family: 'Courier New', Courier, monospace"
+          >
+            <span
+              style="
+                color: #ffc922;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bolder;
+              "
+              >MOOO</span
+            >
+            Airlines
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a href="../index.html" target="_self">Home</a>
+          <a href="../BookFlight/flight.html" target="_self">Flights</a>
+          <a href="" target="_self">Profile</a>
+          <a href="../Login/login.html" target="_self" id = "logButton">Login/SignUp</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <h1 id="Welcome"></h1>
+        <h2 id="book_msg">Your Booked Flights:</h2>
+        <table id="flight-table">
+          <thead>
+            <tr>
+              <th rowspan="2">Airline</th>
+              <th>Source</th>
+              <th>Destination</th>
+              <th>Departure</th>
+              <th>Duration</th>
+              <th>Expected Arrival</th>
+            </tr>
+          </thead>
+          <tbody id="flight-table-body"></tbody>
+        </table>
+      </div>
+
+      <!--Footer content-->
+      
+    </div>
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">
+          <span style="color: #ffc922">MOOO Ltd.</span>
+        </h1>
+  
+        <h2>Contact</h2>
+  
+        <address>
+          Dreamland City, IL 98765<br />
+  
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+        </address>
+      </div>
+  
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">BOOK and MANAGE</h2>
+  
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Search Flights</a>
+            </li>
+  
+            <li>
+              <a href="#">Manage Bookings</a>
+            </li>
+  
+            <li>
+              <a href="#">Flight Schedules</a>
+            </li>
+          </ul>
+        </li>
+  
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title" style="text-align: center">ABOUT US</h2>
+  
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="#">Corporate Information</a>
+            </li>
+  
+            <li>
+              <a href="#">Press</a>
+            </li>
+  
+            <li>
+              <a href="#">Cargo Operations</a>
+            </li>
+  
+            <li>
+              <a href="#">About Mooo Airlines</a>
+            </li>
+          </ul>
+        </li>
+  
+        <li class="nav__item">
+          <h2 class="nav__title">SUPPORT</h2>
+  
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Contact</a>
+            </li>
+  
+            <li>
+              <a href="#">FAQs</a>
+            </li>
+  
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+  
+      <div class="legal">
+        <h>&copy; Copyrights 2023. All rights reserved.</h>
+  
+        <div class="legal__links">
+          <span
+            >Be a STAR ALLIANCE MEMBER <span class="heart">♥</span> Use of
+            this website indicates your compliance with our Terms and
+            Conditions.</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="profile.js"></script>
+  </body>
+</html>
