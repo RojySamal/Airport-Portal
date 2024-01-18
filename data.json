@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "name": "Chirag",
+      "email": "cheeragroutaray@gmail.com",
+      "password": "123456",
+      "id": 1
+    }
+  ],
+  "bbsr2kol": [
+    {
+      "id": 1,
+      "Airline": "Indigo",
+      "ImgSrc": "https://seeklogo.com/images/I/indigo-logo-EDBB4B3C09-seeklogo.com.png",
+      "Source": "BBSR",
+      "Destination": "Kolkata",
+      "Departure": "21:00",
+      "Duration": "1hr30min",
+      "Arrival": "20:30"
+    },
+    {
+      "id": 2,
+      "Airline": "Air Asia",
+      "ImgSrc": "../images/air-asia.png",
+      "Source": "BBSR",
+      "Destination": "Kolkata",
+      "Departure": "23:00",
+      "Duration": "1hr15min",
+      "Arrival": "22:15"
+    }
+  ],
+  "kol2bbsr": [
+    {
+      "id": 1,
+      "Airline": "Vistara",
+      "ImgSrc": "https://seeklogo.com/images/V/vistara-logo-C07710BC2B-seeklogo.com.png",
+      "Source": "Kolkata",
+      "Destination": "BBSR",
+      "Departure": "01:00",
+      "Duration": "1hr2min",
+      "Arrival": "00:00"
+    },
+    {
+      "id": 2,
+      "Airline": "Air India",
+      "ImgSrc": "../images/air-india.png",
+      "Source": "Kolkata",
+      "Destination": "BBSR",
+      "Departure": "23:00",
+      "Duration": "1hr20min",
+      "Arrival": "22:20"
+    }
+  ],
+  "user_flights": [
+    {
+      "id": 1,
+      "email": "Sample Mail",
+      "Airline": "Air Inida",
+      "ImgSrc": "https://w7.pngwing.com/pngs/697/90/png-transparent-airasia-malaysia-flight-airline-travel-travel-love-text-logo-thumbnail.png",
+      "Source": "Kolkata",
+      "Destination": "BBSR",
+      "Departure": "21:00",
+      "Duration": "1hr20min",
+      "Arrival": "22:20"
+    }
+  ]
+}

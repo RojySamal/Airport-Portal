@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="grandparent_div">
+      <div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <div
+            class="nav-title"
+            style="font-family: 'Courier New', Courier, monospace"
+          >
+            <span
+              style="
+                color: #ffc922;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bolder;
+              "
+              >MOOO</span
+            >
+            Airlines
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a href="" target="_self">Home</a>
+          <a href="./BookFlight/flight.html" target="_self">Flights</a>
+          <a href="./profile/profile.html" target="_self">Profile</a>
+          <a href="./Login/login.html" target="_self" id = "logButton">Login/SignUp</a>
+        </div>
+      </div>
+
+      <h1
+        style="
+          font-family: 'Courier New', Courier, monospace;
+          margin: 4%;
+          text-align: center;
+          color: #ffc922;
+        "
+      >
+        Fly with us and experience a world of comfort and convenience.
+      </h1>
+
+      <div id="search_div">
+        <h1 id="d" style="text-align: center">
+          <u>Search Domestic Flights</u>
+        </h1>
+        <div>
+          <label id="from">FROM:</label>
+          <select id="source" style="padding: 1%">
+            <option>Bhubaneswar</option>
+            <option>Kolkata</option>
+          </select>
+        </div>
+
+        <hr />
+        <div>
+          <label for="to">TO:</label>
+          <select id="destination" style="padding: 1%">
+            <option>Bhubaneswar</option>
+            <option>Kolkata</option>
+          </select>
+        </div>
+        <hr />
+        <div>
+          <label for="Ddate">DEPARTURE DATE:</label>
+          <input type="date" id="myDateInput" style="padding: 1%" required />
+        </div>
+        <hr />
+        <div>
+          <details>
+            <summary id="trav">TRAVELLERS</summary>
+            <div id="Count_details">
+              <div>
+                <input
+                  type="number"
+                  id="adult"
+                  min="0"
+                  style="
+                    width: 50px;
+                    height: 10px;
+                    border-radius: 10px;
+                    padding: 1%;
+                  "
+                  value="0"
+                /><label>Adults(Aged 12+ yrs)</label>
+              </div>
+
+              <div>
+                <input
+                  type="number"
+                  id="child"
+                  style="
+                    width: 50px;
+                    height: 10px;
+                    border-radius: 10px;
+                    padding: 1%;
+                  "
+                  value="0"
+                /><label>Children (Aged 2-12 yrs)</label>
+              </div>
+
+              <div>
+                <input
+                  type="number"
+                  id="infant"
+                  style="
+                    width: 50px;
+                    height: 10px;
+                    border-radius: 10px;
+                    padding: 1%;
+                  "
+                  value="0"
+                /><label for="adult">Infants(Below 2 yrs)</label>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <hr />
+        <div>
+          <label for="class">CLASS:</label>
+          <div>
+            <input
+              id="radio_one"
+              type="radio"
+              name="air_radio"
+              value="Economy"
+            />Economy
+            <input
+              type="radio"
+              name="air_radio"
+              value="Business"
+              id="radio_two"
+            />Business
+            <input
+              type="radio"
+              name="air_radio"
+              value="First"
+              id="radio_three"
+            />First
+          </div>
+        </div>
+        <hr />
+        <button id="search">Search Flights</button>
+      </div>
+
+      <div id="random">
+        <div id="offer">
+          <h1 style="color: wheat">Extra convenience for your trip</h1>
+          <div>
+            <p>
+              <i class="fa fa-gift" aria-hidden="true"></i>Booking Hotel and
+              flights together saves you to 30%
+            </p>
+          </div>
+          <div>
+            <p>Add airport for special price for you</p>
+          </div>
+          <div>
+            <p>Travel in style, relax in comfort, and arrive with a smile.</p>
+          </div>
+          <div>
+            <p>Get rewarded for your loyalty!</p>
+          </div>
+        </div>
+
+        <div id="mascot">
+          <h1 id="masheading" style="color: black">
+            <span style="color: #ffc922">Mr.MOOO</span> says Hello!
+          </h1>
+          <h4
+            style="
+              color: white;
+              text-align: center;
+              font-family: 'Courier New', Courier, monospace;
+              font-weight: bolder;
+            "
+          >
+            Fly with us, where dreams take flight!
+          </h4>
+          <button
+            style="
+              margin-left: 35%;
+              border-radius: 20px;
+              background-color: #ffc922;
+              padding: 2%;
+              width: 30%;
+            "
+          >
+            Explore
+          </button>
+          <video src="./videos/cow_-_125167 (540p).mp4" autoplay loop></video>
+          <div style="font-family: 'Courier New', Courier, monospace">
+            <button class="open-button" onclick="openForm()">
+              Send us your review
+            </button>
+            <div class="chat-popup" id="myForm">
+              <form action="/action_page.php" class="form-container">
+                <h1>Send a message</h1>
+
+                <label for="msg"><b>Contact</b></label>
+                <textarea
+                  placeholder="Send us your review.."
+                  name="msg"
+                  required
+                ></textarea>
+
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">
+                  Close
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Footer content-->
+      <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">
+            <span style="color: #ffc922">MOOO Ltd.</span>
+          </h1>
+
+          <h2>Contact</h2>
+
+          <address>
+            Dreamland City, IL 98765<br />
+
+            <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+          </address>
+        </div>
+
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">BOOK and MANAGE</h2>
+
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Search Flights</a>
+              </li>
+
+              <li>
+                <a href="#">Manage Bookings</a>
+              </li>
+
+              <li>
+                <a href="#">Flight Schedules</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title" style="text-align: center">ABOUT US</h2>
+
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <a href="#">Corporate Information</a>
+              </li>
+
+              <li>
+                <a href="#">Press</a>
+              </li>
+
+              <li>
+                <a href="#">Cargo Operations</a>
+              </li>
+
+              <li>
+                <a href="#">About Mooo Airlines</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item">
+            <h2 class="nav__title">SUPPORT</h2>
+
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Contact</a>
+              </li>
+
+              <li>
+                <a href="#">FAQs</a>
+              </li>
+
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="legal">
+          <h>&copy; Copyrights 2023. All rights reserved.</h>
+
+          <div class="legal__links">
+            <span
+              >Be a STAR ALLIANCE MEMBER <span class="heart">♥</span> Use of
+              this website indicates your compliance with our Terms and
+              Conditions.</span
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
