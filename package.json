@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "airport-portal": "file:",
     "json-server": "^0.17.3"
   }
 }
